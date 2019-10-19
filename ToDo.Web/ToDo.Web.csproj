@@ -22,10 +22,13 @@
   <ItemGroup>
     <None Remove="Scripts\App\AppConfig.js" />
     <None Remove="Scripts\App\AppConfig.js.map" />
+    <None Remove="Scripts\App\AppConfig.ts" />
     <None Remove="Scripts\App\AppContext.js" />
     <None Remove="Scripts\App\AppContext.js.map" />
+    <None Remove="Scripts\App\AppContext.ts" />
     <None Remove="Scripts\App\AppStartup.js" />
     <None Remove="Scripts\App\AppStartup.js.map" />
+    <None Remove="Scripts\App\AppStartup.ts" />
     <None Remove="Scripts\App\Home\Index.js" />
     <None Remove="Scripts\App\Home\Index.js.map" />
     <None Remove="Scripts\App\Home\Index.ts" />
@@ -33,8 +36,10 @@
     <None Remove="Scripts\App\Shared\Layout.js.map" />
     <None Remove="Scripts\App\ToDo\ToDoDetail.js" />
     <None Remove="Scripts\App\ToDo\ToDoDetail.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.ts" />
     <None Remove="Scripts\App\ToDo\ToDoList.js" />
     <None Remove="Scripts\App\ToDo\ToDoList.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoList.ts" />
     <None Remove="Scripts\Core\ErrorUtil.js" />
     <None Remove="Scripts\Core\ErrorUtil.js.map" />
     <None Remove="Scripts\Core\ErrorUtil.ts" />
@@ -63,12 +68,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Remove="Scripts\App\AppConfig.ts" />
-    <TypeScriptCompile Remove="Scripts\App\AppContext.ts" />
-    <TypeScriptCompile Remove="Scripts\App\AppStartup.ts" />
     <TypeScriptCompile Remove="Scripts\App\Shared\Layout.ts" />
-    <TypeScriptCompile Remove="Scripts\App\ToDo\ToDoDetail.ts" />
-    <TypeScriptCompile Remove="Scripts\App\ToDo\ToDoList.ts" />
   </ItemGroup>
 
   <ItemGroup>
