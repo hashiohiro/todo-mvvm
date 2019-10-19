@@ -7,25 +7,68 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Scripts\App\AppConfig.ts" />
-    <None Remove="Scripts\App\AppContext.ts" />
-    <None Remove="Scripts\App\AppStartup.ts" />
+    <Compile Remove="Scripts\Core\MVVM\__Kentou__\**" />
+    <Compile Remove="Scripts\Core\__Kentou__\**" />
+    <Content Remove="Scripts\Core\MVVM\__Kentou__\**" />
+    <Content Remove="Scripts\Core\__Kentou__\**" />
+    <EmbeddedResource Remove="Scripts\Core\MVVM\__Kentou__\**" />
+    <EmbeddedResource Remove="Scripts\Core\__Kentou__\**" />
+    <None Remove="Scripts\Core\MVVM\__Kentou__\**" />
+    <None Remove="Scripts\Core\__Kentou__\**" />
+    <TypeScriptCompile Remove="Scripts\Core\MVVM\__Kentou__\**" />
+    <TypeScriptCompile Remove="Scripts\Core\__Kentou__\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\App\AppConfig.js" />
+    <None Remove="Scripts\App\AppConfig.js.map" />
+    <None Remove="Scripts\App\AppContext.js" />
+    <None Remove="Scripts\App\AppContext.js.map" />
+    <None Remove="Scripts\App\AppStartup.js" />
+    <None Remove="Scripts\App\AppStartup.js.map" />
+    <None Remove="Scripts\App\Home\Index.js" />
+    <None Remove="Scripts\App\Home\Index.js.map" />
     <None Remove="Scripts\App\Home\Index.ts" />
-    <None Remove="Scripts\App\Shared\Layout.ts" />
-    <None Remove="Scripts\App\ToDo\ToDoDetail.ts" />
-    <None Remove="Scripts\App\ToDo\ToDoList.ts" />
+    <None Remove="Scripts\App\Shared\Layout.js" />
+    <None Remove="Scripts\App\Shared\Layout.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.js" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoList.js" />
+    <None Remove="Scripts\App\ToDo\ToDoList.js.map" />
+    <None Remove="Scripts\Core\ErrorUtil.js" />
+    <None Remove="Scripts\Core\ErrorUtil.js.map" />
     <None Remove="Scripts\Core\ErrorUtil.ts" />
     <None Remove="Scripts\Core\Extensions.ts" />
     <None Remove="Scripts\Core\IEvent.ts" />
     <None Remove="Scripts\Core\IPublisher.ts" />
-    <None Remove="Scripts\Core\Mediator\IPublisher.ts" />
-    <None Remove="Scripts\Core\Mediator\ISubscriber.ts" />
-    <None Remove="Scripts\Core\Mediator\Publisher.ts" />
+    <None Remove="Scripts\Core\Mediator\IPublisher.js" />
+    <None Remove="Scripts\Core\Mediator\IPublisher.js.map" />
+    <None Remove="Scripts\Core\Mediator\ISubscriber.js" />
+    <None Remove="Scripts\Core\Mediator\ISubscriber.js.map" />
+    <None Remove="Scripts\Core\Mediator\Publisher.js" />
+    <None Remove="Scripts\Core\Mediator\Publisher.js.map" />
     <None Remove="Scripts\Core\MVVM\Property.ts" />
     <None Remove="Scripts\Core\MVVM\PropertyChangedEvent.ts" />
     <None Remove="Scripts\Core\MVVM\PropertySubscriber.ts" />
+    <None Remove="Scripts\Core\MVVM\View.js" />
+    <None Remove="Scripts\Core\MVVM\View.js.map" />
+    <None Remove="Scripts\Core\MVVM\ViewModel.js" />
+    <None Remove="Scripts\Core\MVVM\ViewModel.js.map" />
     <None Remove="Scripts\Core\MVVM\ViewModel.ts" />
+    <None Remove="Scripts\Core\MVVM\Widget.js" />
+    <None Remove="Scripts\Core\MVVM\Widget.js.map" />
+    <None Remove="Scripts\Core\TypedFactory.js" />
+    <None Remove="Scripts\Core\TypedFactory.js.map" />
     <None Remove="Scripts\Core\TypedFactory.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Remove="Scripts\App\AppConfig.ts" />
+    <TypeScriptCompile Remove="Scripts\App\AppContext.ts" />
+    <TypeScriptCompile Remove="Scripts\App\AppStartup.ts" />
+    <TypeScriptCompile Remove="Scripts\App\Shared\Layout.ts" />
+    <TypeScriptCompile Remove="Scripts\App\ToDo\ToDoDetail.ts" />
+    <TypeScriptCompile Remove="Scripts\App\ToDo\ToDoList.ts" />
   </ItemGroup>
 
   <ItemGroup>
