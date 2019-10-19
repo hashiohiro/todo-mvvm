@@ -1,0 +1,8 @@
+{
+  "version": "0.1.1",
+  "name": "todo",
+  "private": true,
+  "devDependencies": {
+    "@types/vue": "2.0.0"
+  }
+}

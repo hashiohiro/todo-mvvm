@@ -1,0 +1,72 @@
+[
+  {
+    "outputFileName": "wwwroot/js/Extensions.js",
+    "inputFiles": [
+      "Scripts/Extensions/ObjectExtensions.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/Core.js",
+    "inputFiles": [
+      "Scripts/Core/ErrorUtil.js",
+      "Scripts/Core/TypedFactory.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/Core.MVVM.js", 
+    "inputFiles": [
+      "Scripts/Core/MVVM/Widget.js",
+      "Scripts/Core/MVVM/View.js",
+      "Scripts/Core/MVVM/ViewModel.js"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/App.js",
+    "inputFiles": [
+      "Scripts/App/**.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/App.Home.js",
+    "inputFiles": [
+      "Scripts/App/Home/**.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/App.ToDo.js",
+    "inputFiles": [
+      "Scripts/App/ToDo/**.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

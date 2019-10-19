@@ -1,0 +1,1 @@
+{"version":3,"file":"ObjectExtensions.js","sourceRoot":"","sources":["ObjectExtensions.ts"],"names":[],"mappings":"AAKA,MAAM,CAAC,SAAS,CAAC,cAAc,GAAG;IAC9B,OAAO,IAAI,CAAC,WAAW,CAAC;AAC5B,CAAC,CAAA;AAED,MAAM,CAAC,SAAS,CAAC,WAAW,GAAG;IAC3B,OAAO,IAAI,CAAC,WAAW,CAAC,IAAI,CAAC;AACjC,CAAC,CAAA"}

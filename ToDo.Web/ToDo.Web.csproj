@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TypeScriptToolsVersion>3.6</TypeScriptToolsVersion>
+    <AssemblyName>ToDo.Web</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\App\AppConfig.ts" />
+    <None Remove="Scripts\App\AppContext.ts" />
+    <None Remove="Scripts\App\AppStartup.ts" />
+    <None Remove="Scripts\App\Home\Index.ts" />
+    <None Remove="Scripts\App\Shared\Layout.ts" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.ts" />
+    <None Remove="Scripts\App\ToDo\ToDoList.ts" />
+    <None Remove="Scripts\Core\ErrorUtil.ts" />
+    <None Remove="Scripts\Core\Extensions.ts" />
+    <None Remove="Scripts\Core\IEvent.ts" />
+    <None Remove="Scripts\Core\IPublisher.ts" />
+    <None Remove="Scripts\Core\Mediator\IPublisher.ts" />
+    <None Remove="Scripts\Core\Mediator\ISubscriber.ts" />
+    <None Remove="Scripts\Core\Mediator\Publisher.ts" />
+    <None Remove="Scripts\Core\MVVM\Property.ts" />
+    <None Remove="Scripts\Core\MVVM\PropertyChangedEvent.ts" />
+    <None Remove="Scripts\Core\MVVM\PropertySubscriber.ts" />
+    <None Remove="Scripts\Core\MVVM\ViewModel.ts" />
+    <None Remove="Scripts\Core\TypedFactory.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.0" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.6.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Update="Scripts\App\Home\Index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES2015</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>ES6</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+
+</Project>
