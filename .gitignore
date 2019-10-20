@@ -338,5 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# Application Code
 /ToDo.Web/Scripts/**/*.js
 /ToDo.Web/Scripts/**/*.js.map
+/ToDo.Web/wwwroot/**/*.js
+/ToDo.Web/wwwroot/**/*.css

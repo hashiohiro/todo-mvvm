@@ -35,7 +35,11 @@
         }
 
         public static set Url(url: URL) {
-            location.href = url.toString();
+            location.replace(url.toString());
+        }
+
+        public static Reload(forcedReload?: boolean) {
+            location.reload(forcedReload)
         }
     }
 

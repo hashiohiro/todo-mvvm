@@ -7,71 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Scripts\Core\MVVM\__Kentou__\**" />
-    <Compile Remove="Scripts\Core\__Kentou__\**" />
-    <Content Remove="Scripts\Core\MVVM\__Kentou__\**" />
-    <Content Remove="Scripts\Core\__Kentou__\**" />
-    <EmbeddedResource Remove="Scripts\Core\MVVM\__Kentou__\**" />
-    <EmbeddedResource Remove="Scripts\Core\__Kentou__\**" />
-    <None Remove="Scripts\Core\MVVM\__Kentou__\**" />
-    <None Remove="Scripts\Core\__Kentou__\**" />
-    <TypeScriptCompile Remove="Scripts\Core\MVVM\__Kentou__\**" />
-    <TypeScriptCompile Remove="Scripts\Core\__Kentou__\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Scripts\App\AppConfig.js" />
-    <None Remove="Scripts\App\AppConfig.js.map" />
-    <None Remove="Scripts\App\AppConfig.ts" />
-    <None Remove="Scripts\App\AppContext.js" />
-    <None Remove="Scripts\App\AppContext.js.map" />
-    <None Remove="Scripts\App\AppContext.ts" />
-    <None Remove="Scripts\App\AppStartup.js" />
-    <None Remove="Scripts\App\AppStartup.js.map" />
-    <None Remove="Scripts\App\AppStartup.ts" />
-    <None Remove="Scripts\App\Home\Index.js" />
-    <None Remove="Scripts\App\Home\Index.js.map" />
-    <None Remove="Scripts\App\Home\Index.ts" />
-    <None Remove="Scripts\App\Shared\Layout.js" />
-    <None Remove="Scripts\App\Shared\Layout.js.map" />
-    <None Remove="Scripts\App\ToDo\ToDoDetail.js" />
-    <None Remove="Scripts\App\ToDo\ToDoDetail.js.map" />
-    <None Remove="Scripts\App\ToDo\ToDoDetail.ts" />
-    <None Remove="Scripts\App\ToDo\ToDoList.js" />
-    <None Remove="Scripts\App\ToDo\ToDoList.js.map" />
-    <None Remove="Scripts\App\ToDo\ToDoList.ts" />
-    <None Remove="Scripts\Core\ErrorUtil.js" />
-    <None Remove="Scripts\Core\ErrorUtil.js.map" />
-    <None Remove="Scripts\Core\ErrorUtil.ts" />
-    <None Remove="Scripts\Core\Extensions.ts" />
-    <None Remove="Scripts\Core\IEvent.ts" />
-    <None Remove="Scripts\Core\IPublisher.ts" />
-    <None Remove="Scripts\Core\Mediator\IPublisher.js" />
-    <None Remove="Scripts\Core\Mediator\IPublisher.js.map" />
-    <None Remove="Scripts\Core\Mediator\ISubscriber.js" />
-    <None Remove="Scripts\Core\Mediator\ISubscriber.js.map" />
-    <None Remove="Scripts\Core\Mediator\Publisher.js" />
-    <None Remove="Scripts\Core\Mediator\Publisher.js.map" />
-    <None Remove="Scripts\Core\MVVM\Property.ts" />
-    <None Remove="Scripts\Core\MVVM\PropertyChangedEvent.ts" />
-    <None Remove="Scripts\Core\MVVM\PropertySubscriber.ts" />
-    <None Remove="Scripts\Core\MVVM\View.js" />
-    <None Remove="Scripts\Core\MVVM\View.js.map" />
-    <None Remove="Scripts\Core\MVVM\ViewModel.js" />
-    <None Remove="Scripts\Core\MVVM\ViewModel.js.map" />
-    <None Remove="Scripts\Core\MVVM\ViewModel.ts" />
-    <None Remove="Scripts\Core\MVVM\Widget.js" />
-    <None Remove="Scripts\Core\MVVM\Widget.js.map" />
-    <None Remove="Scripts\Core\TypedFactory.js" />
-    <None Remove="Scripts\Core\TypedFactory.js.map" />
-    <None Remove="Scripts\Core\TypedFactory.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Remove="Scripts\App\Shared\Layout.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.0.0" />
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.6.4">
       <PrivateAssets>all</PrivateAssets>
@@ -80,15 +15,80 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\lib\" />
+    <None Remove="Scripts\App\AppConfig.js" />
+    <None Remove="Scripts\App\AppContext.js" />
+    <None Remove="Scripts\App\AppStartup.js" />
+    <None Remove="Scripts\App\Home\Index.js" />
+    <None Remove="Scripts\App\Shared\Layout.js" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.js" />
+    <None Remove="Scripts\App\ToDo\ToDoList.js" />
+    <None Remove="Scripts\Core\ErrorUtil.js" />
+    <None Remove="Scripts\Core\IEvent.js" />
+    <None Remove="Scripts\Core\TypedFactory.js" />
+    <None Remove="Scripts\Core\Mediator\IPublisher.js" />
+    <None Remove="Scripts\Core\Mediator\ISubscriber.js" />
+    <None Remove="Scripts\Core\Mediator\Publisher.js" />
+    <None Remove="Scripts\Core\MVVM\View.js" />
+    <None Remove="Scripts\Core\MVVM\ViewModel.js" />
+    <None Remove="Scripts\Core\MVVM\Widget.js" />
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Update="Scripts\App\Home\Index.ts">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
+    <None Remove="Scripts\App\AppConfig.js.map" />
+    <None Remove="Scripts\App\AppContext.js.map" />
+    <None Remove="Scripts\App\AppStartup.js.map" />
+    <None Remove="Scripts\App\Home\Index.js.map" />
+    <None Remove="Scripts\App\Shared\Layout.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoDetail.js.map" />
+    <None Remove="Scripts\App\ToDo\ToDoList.js.map" />
+    <None Remove="Scripts\Core\ErrorUtil.js.map" />
+    <None Remove="Scripts\Core\IEvent.js.map" />
+    <None Remove="Scripts\Core\TypedFactory.js.map" />
+    <None Remove="Scripts\Core\Mediator\IPublisher.js.map" />
+    <None Remove="Scripts\Core\Mediator\ISubscriber.js.map" />
+    <None Remove="Scripts\Core\Mediator\Publisher.js.map" />
+    <None Remove="Scripts\Core\MVVM\View.js.map" />
+    <None Remove="Scripts\Core\MVVM\ViewModel.js.map" />
+    <None Remove="Scripts\Core\MVVM\Widget.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\App\AppConfig.ts" />
+    <TypeScriptCompile Include="Scripts\App\AppContext.ts" />
+    <TypeScriptCompile Include="Scripts\App\AppStartup.ts" />
+    <TypeScriptCompile Include="Scripts\App\Home\Index.ts" />
+    <TypeScriptCompile Include="Scripts\App\Shared\Layout.ts" />
+    <TypeScriptCompile Include="Scripts\App\ToDo\ToDoDetail.ts" />
+    <TypeScriptCompile Include="Scripts\App\ToDo\ToDoList.ts" />
+    <TypeScriptCompile Include="Scripts\Core\ErrorUtil.ts" />
+    <TypeScriptCompile Include="Scripts\Core\IEvent.ts" />
+    <TypeScriptCompile Include="Scripts\Core\TypedFactory.ts" />
+    <TypeScriptCompile Include="Scripts\Core\Mediator\IPublisher.ts" />
+    <TypeScriptCompile Include="Scripts\Core\Mediator\ISubscriber.ts" />
+    <TypeScriptCompile Include="Scripts\Core\Mediator\Publisher.ts" />
+    <TypeScriptCompile Include="Scripts\Core\MVVM\View.ts" />
+    <TypeScriptCompile Include="Scripts\Core\MVVM\ViewModel.ts" />
+    <TypeScriptCompile Include="Scripts\Core\MVVM\Widget.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\App.js" />
+    <Content Remove="wwwroot\js\App.min.js" />
+    <Content Remove="wwwroot\js\App.Home.js" />
+    <Content Remove="wwwroot\js\App.Home.min.js" />
+    <Content Remove="wwwroot\js\App.ToDo.js" />
+    <Content Remove="wwwroot\js\App.ToDo.min.js" />
+    <Content Remove="wwwroot\js\Core.js" />
+    <Content Remove="wwwroot\js\Core.min.js" />
+    <Content Remove="wwwroot\js\Core.MVVM.js" />
+    <Content Remove="wwwroot\js\Core.MVVM.min.js" />
+    <Content Remove="wwwroot\js\Extensions.js" />
+    <Content Remove="wwwroot\js\Extensions.min.js" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
