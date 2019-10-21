@@ -73,20 +73,11 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\js\App.js" />
-    <Content Remove="wwwroot\js\App.min.js" />
-    <Content Remove="wwwroot\js\App.Home.js" />
-    <Content Remove="wwwroot\js\App.Home.min.js" />
-    <Content Remove="wwwroot\js\App.ToDo.js" />
-    <Content Remove="wwwroot\js\App.ToDo.min.js" />
     <Content Remove="wwwroot\js\Core.js" />
     <Content Remove="wwwroot\js\Core.min.js" />
-    <Content Remove="wwwroot\js\Core.MVVM.js" />
-    <Content Remove="wwwroot\js\Core.MVVM.min.js" />
     <Content Remove="wwwroot\js\Extensions.js" />
     <Content Remove="wwwroot\js\Extensions.min.js" />
   </ItemGroup>

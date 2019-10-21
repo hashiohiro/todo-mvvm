@@ -2,22 +2,21 @@
     export class Publisher implements IPublisher {
         constructor(private _id: string) { }
 
-        private _subscribers: Array<ISubscriber>;
+        private _subscribers: { [key: string]: Array<ISubscriber> };
 
         public get Id(): string {
             return this._id;
         }
 
-        public AddSubscriber(subscriber: ISubscriber): void {
-            this._subscribers.push(subscriber);
+        public AddSubscriber(e: IEvent, subscriber: ISubscriber): void {
+            let subscriberByEvent = this._subscribers[e.GetTypeName()];
+            if (subscriberByEvent.find(s => s.GetTypeName() == subscriber.GetTypeName())) {
+                subscriberByEvent.push(subscriber);
+            }
         }
 
-        public PublishAll(e: IEvent): void {
-            this.Publish(e, this._subscribers);
-        }
-
-        public Publish(e: IEvent, subscribers: Array<ISubscriber>): void {
-            subscribers.forEach(s => {
+        public Publish(e: IEvent): void {
+            this._subscribers[e.GetTypeName()].forEach(s => {
                 s.OnSubscribe(e, this);
             });
         }
