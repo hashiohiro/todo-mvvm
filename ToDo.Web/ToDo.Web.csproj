@@ -26,9 +26,6 @@
     <None Remove="Scripts\Core\IEvent.js" />
     <None Remove="Scripts\Core\MVVM\Event\ClickEvent.ts" />
     <None Remove="Scripts\Core\TypedFactory.js" />
-    <None Remove="Scripts\Core\Mediator\IPublisher.js" />
-    <None Remove="Scripts\Core\Mediator\ISubscriber.js" />
-    <None Remove="Scripts\Core\Mediator\Publisher.js" />
     <None Remove="Scripts\Core\MVVM\View.js" />
     <None Remove="Scripts\Core\MVVM\ViewModel.js" />
     <None Remove="Scripts\Core\MVVM\Widget.js" />
@@ -45,9 +42,6 @@
     <None Remove="Scripts\Core\ErrorUtil.js.map" />
     <None Remove="Scripts\Core\IEvent.js.map" />
     <None Remove="Scripts\Core\TypedFactory.js.map" />
-    <None Remove="Scripts\Core\Mediator\IPublisher.js.map" />
-    <None Remove="Scripts\Core\Mediator\ISubscriber.js.map" />
-    <None Remove="Scripts\Core\Mediator\Publisher.js.map" />
     <None Remove="Scripts\Core\MVVM\View.js.map" />
     <None Remove="Scripts\Core\MVVM\ViewModel.js.map" />
     <None Remove="Scripts\Core\MVVM\Widget.js.map" />
@@ -61,13 +55,8 @@
     <TypeScriptCompile Include="Scripts\App\ToDo\ToDoList.ts" />
     <TypeScriptCompile Include="Scripts\Core\ErrorUtil.ts" />
     <TypeScriptCompile Include="Scripts\Core\IEvent.ts" />
-    <TypeScriptCompile Include="Scripts\Core\TypedFactory.ts" />
-    <TypeScriptCompile Include="Scripts\Core\Mediator\IPublisher.ts" />
-    <TypeScriptCompile Include="Scripts\Core\Mediator\ISubscriber.ts" />
-    <TypeScriptCompile Include="Scripts\Core\Mediator\Publisher.ts" />
     <TypeScriptCompile Include="Scripts\Core\MVVM\View.ts" />
     <TypeScriptCompile Include="Scripts\Core\MVVM\ViewModel.ts" />
-    <TypeScriptCompile Include="Scripts\Core\MVVM\Widget.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -75,8 +64,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\js\Core.js" />
-    <Content Remove="wwwroot\js\Core.min.js" />
     <Content Remove="wwwroot\js\Extensions.js" />
     <Content Remove="wwwroot\js\Extensions.min.js" />
   </ItemGroup>
