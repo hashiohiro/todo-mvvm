@@ -19,7 +19,7 @@ namespace ToDo.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Redirect("ToDo/ToDoList");
         }
     }
 }

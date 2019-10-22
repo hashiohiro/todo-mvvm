@@ -2,19 +2,29 @@
     export class ToDoListView extends Core.MVVM.View {
         constructor() {
             super();
-            this.Bind();
-        }
 
-        protected Email: Core.MVVM.InputWidget;
-        protected Password: Core.MVVM.InputWidget;
+            this.Container = document.querySelector('#todo-list');
+            this.DataContext = new ToDoListViewModel();
 
-        protected Bind(): void {
-            this.Email = new Core.MVVM.InputWidget('#email').SetValue('Enter Email');
-            this.Password = new Core.MVVM.InputWidget('#password').SetValue('Enter Password');
+            let emailValueDbb = new Core.MVVM.DataBindingBehavior();
+            emailValueDbb.DataContext = this.DataContext;
+            emailValueDbb.Container = document.querySelector('#email');
+            emailValueDbb.Property = Core.MVVM.UIAttribute.ValueAttribute;
+            emailValueDbb.VMProperty = 'Email';
+
+            let passwordValueDbb = new Core.MVVM.DataBindingBehavior();
+            passwordValueDbb.DataContext = this.DataContext;
+            passwordValueDbb.Container = document.querySelector('#password');
+            passwordValueDbb.Property = Core.MVVM.UIAttribute.ValueAttribute;
+            passwordValueDbb.VMProperty = 'Password';
+
+            this.AddBindingBehavior(emailValueDbb);
+            this.AddBindingBehavior(passwordValueDbb);
         }
     }
 
     export class ToDoListViewModel extends Core.MVVM.ViewModel {
-
+        public Email: string;
+        public Password: string;
     }
 }

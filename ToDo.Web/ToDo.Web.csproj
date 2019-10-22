@@ -53,8 +53,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\App\AppConfig.ts" />
-    <TypeScriptCompile Include="Scripts\App\AppContext.ts" />
     <TypeScriptCompile Include="Scripts\App\AppStartup.ts" />
     <TypeScriptCompile Include="Scripts\App\Home\Index.ts" />
     <TypeScriptCompile Include="Scripts\App\Shared\Layout.ts" />
