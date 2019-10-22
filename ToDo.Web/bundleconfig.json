@@ -23,12 +23,11 @@
     "sourceMap": false
   },
   {
-    "outputFileName": "wwwroot/js/Core.MVVM.js", 
+    "outputFileName": "wwwroot/js/Core.MVVM.js",
     "inputFiles": [
-      "Scripts/Core/MVVM/Widget.js",
+      "Scripts/Core/MVVM/Event/ClickEvent.js",
       "Scripts/Core/MVVM/View.js",
       "Scripts/Core/MVVM/ViewModel.js"
-
     ],
     "minify": {
       "enabled": true,

@@ -18,8 +18,27 @@
             passwordValueDbb.Property = Core.MVVM.UIAttribute.ValueAttribute;
             passwordValueDbb.VMProperty = 'Password';
 
+            let updateSourceAbb = new Core.MVVM.ActionBindingBehavior();
+            updateSourceAbb.Event = new Core.MVVM.Event.ClickEvent();
+            updateSourceAbb.ActionHandle = (e) => {
+                this.UpdateSource();
+                console.log(updateSourceAbb.DataContext);
+            };
+            updateSourceAbb.Container = document.querySelector('#btnUpdateSource');
+            updateSourceAbb.DataContext = this.DataContext;
+            updateSourceAbb.Ensure();
+
+            let updateTargetAbb = new Core.MVVM.ActionBindingBehavior();
+            updateTargetAbb.Event = new Core.MVVM.Event.ClickEvent();
+            updateTargetAbb.ActionHandle = (e) => { this.UpdateTarget(); };
+            updateTargetAbb.Container = document.querySelector('#btnUpdateTarget');
+            updateTargetAbb.DataContext = this.DataContext;
+            updateTargetAbb.Ensure();
+
             this.AddBindingBehavior(emailValueDbb);
             this.AddBindingBehavior(passwordValueDbb);
+            this.AddBindingBehavior(updateSourceAbb);
+            this.AddBindingBehavior(updateTargetAbb);
         }
     }
 

@@ -76,6 +76,8 @@
             this._dataContext = value;
         }
 
+        public abstract Ensure(): void;
+
         private _container: Element;
         private _dataContext: ViewModel;
     }
@@ -83,6 +85,10 @@
     export class DataBindingBehavior extends BindingBehavior {
         public Property: DependencyProperty;
         public VMProperty: string
+
+        public Ensure(): void {
+            throw new Error("Method not implemented.");
+        }
 
         public UpdateSource(): void {
             let value = this.Property.GetValue(this.Container);
@@ -94,12 +100,16 @@
         }
     }
 
-    //export class ActionBindingBehavior extends BindingBehavior {
-    //    public Event: IEvent;
-    //    public Action: Function;
-    //    public ActionParameterCount: number;
-    //    public AllowBubbling: boolean;
-    //}
+    export class ActionBindingBehavior extends BindingBehavior {
+        public Event: IEvent;
+        public ActionHandle: (e: any) => void;
+
+        public Ensure(): void {
+            if (this.Event && this.Event.EventName) {
+                this.Container.addEventListener(this.Event.EventName, e => this.ActionHandle(e))
+            }
+        }
+    }
 
     export class DependencyProperty {
         constructor(name: string) {

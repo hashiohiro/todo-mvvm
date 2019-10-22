@@ -24,6 +24,7 @@
     <None Remove="Scripts\App\ToDo\ToDoList.js" />
     <None Remove="Scripts\Core\ErrorUtil.js" />
     <None Remove="Scripts\Core\IEvent.js" />
+    <None Remove="Scripts\Core\MVVM\Event\ClickEvent.ts" />
     <None Remove="Scripts\Core\TypedFactory.js" />
     <None Remove="Scripts\Core\Mediator\IPublisher.js" />
     <None Remove="Scripts\Core\Mediator\ISubscriber.js" />
